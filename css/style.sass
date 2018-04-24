@@ -1,4 +1,90 @@
-$emma : #333
+$deepBlue : #1d50b1
+$pink: #ff3e84
+$darkGrey: #202020
+$almostBlack: #1c1c1c
 
 body 
-	color: $emma
+	font-family: 'Lato', sans-serif
+	header
+		background-color: $deepBlue
+		color: white !important
+		margin-bottom: 0px !important
+
+	.nav>li>a:hover 
+		background-color: $deepBlue !important
+
+	.navbar-header	
+		width: 100%
+		.logo
+			width: 15vw
+		.phone
+			height: 100%;
+			display: flex;
+			align-items: center;
+			font-size: 18px
+			i
+				-webkit-transform: rotate(90deg)
+				-moz-transform: rotate(90deg)
+				-ms-transform: rotate(90deg)
+				-o-transform: rotate(90deg)
+				transform: rotate(90deg)	
+				margin-right: 5px;
+		nav
+			display: flex
+			justify-content: space-between
+	.navbar-right
+		a
+			color: white !important		
+	.breadcrumb		
+		font-size: 10px
+		background-color: transparent
+		padding: 8px 50px;
+		a
+			color: grey
+	.productRow
+		height: 80vh
+		.miniatures 
+			display: flex
+			flex-direction: column
+			height: 30vh
+			justify-content: space-between
+
+			img
+				width: 50px	
+			
+		
+		.mainPic img 
+			width: 375px
+			height: 480px
+			background-image: url("../img/aire.jpg") 
+
+		.description
+			display: flex
+			flex-direction: column
+			justify-content: space-between
+
+
+
+
+			.productTitle
+				font-size: 30px	
+				font-weight: bold
+
+			.price
+				font-size: 25px
+				color: $pink
+				margin: 25px 0
+			
+			.friSelector 
+				font-size: 18px
+				margin: 5px 0
+				font-weight: bold
+			.fgSelector
+				width: 70%
+				margin: 20px 0		
+		form 
+			
+			button
+				background-color: transparent 
+				color: $pink
+				border-color: $pink 2px solid	

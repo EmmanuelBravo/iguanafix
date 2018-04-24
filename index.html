@@ -8,6 +8,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
 
         <link rel="stylesheet" href="css/normalize.css">
+        <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
         <link rel="stylesheet" href="css/bootstrap.min.css">
         <link rel="stylesheet" href="css/bootstrap-theme.min.css">
         <link rel="stylesheet" href="css/fontawesome/css/fontawesome-all.css">
@@ -26,63 +27,56 @@
 <header class="navbar navbar-static-top" id="top">
     <div class="container">
         <div class="navbar-header">
-        <nav class="collapse navbar-collapse" id="bs-navbar">
+        <nav class="" id="bs-navbar">
               <ul class="nav navbar-nav navbar-left">
-                <li> <a href="">Logo</a> </li>
-                <li> 0810-222-3334 </li>
+                <li class="logo"> <a href="">
+                  <img class="img-responsive" src="img/logo.svg?v=146.1.P" alt="iguanafix">
+                </a> </li>
+                <li class="phone"> <i class="fa fa-phone"></i>0810-222-3334 </li>
             </ul>
             <ul class="nav navbar-nav navbar-right">
                 <li> <a href="">Casa</a> </li>
                 <li> <a href="">Auto</a> </li>
                 <li> <a href="">Empresa</a> </li>
-                <li> <a href="">Ingresar</a> </li>
+                <li> <a href="">Ingresar <i class="fa fa-user"></i></a> </li>
             </ul>
         </nav>
     </div>
 </header>
 <!-- BREADCRUMB -->
-<div class="breadcrumb-box">
-  <div class="container">
+
     <ul class="breadcrumb">
-      <li><a href="index.html">CONTRATAR UN SERVICIO</a> </li>
-      <li><a href="/catalog-grid.html">INSTALACION DE AIRE ACONDICIONADO</a> </li>
+      <li><a href="">CONTRATAR UN SERVICIO</a></li>
+      <li><a href="">INSTALACION DE AIRE ACONDICIONADO</a> </li>
     </ul>   
-  </div>
-</div>
+  
 <!-- PRODUCT BODY -->
-<div class="row">
+<div class="row productRow">
   <!-- IMAGE SIDE -->
-    <div class="col-sm-7 col-md-7">
-     
-      
-      <div class="col-sm-12 col-md-2">
-        <a href=""><img src="" alt=""></a>
-        <a href=""><img src="" alt=""></a>
-        <a href=""><img src="" alt=""></a>
+    <div class="col-sm-7 col-md-7">     
+      <div class="col-sm-12 col-md-2 miniatures">
+        <a href=""><img src="img/aire.jpg" alt=""></a>
+        <a href=""><img src="img/aire.jpg" alt=""></a>
+        <a href=""><img src="img/aire.jpg" alt=""></a>
       </div>
       
-      <div class="col-sm-12 col-md-10">
-        <a href=""><img src="img/aire.jpg" alt=""></a>
+      <div class="col-sm-12 col-md-10 mainPic">
+        <a href=""><img  alt=""></a>
       </div>
 
     </div>
     <!-- DECRIPTION SIDE   -->
-    <div class="col-sm-5 col-md-5">
+    <div class="col-sm-5 col-md-5 description">
      <div class="productTitle">
        Instalación de aire acondicionado Split
      </div>
-       <div class="price-box">
-        <span class="price">$1199.00</span>
-      </div>
+        <span class="price">$3199</span>
       <span class="friSelector">Frigorias</span>
-      <select name="" id="" class="friSelector">
-        <option value=""></option>
-        <option value=""></option>
-        <option value=""></option>
+      <select name="" id="" class="fgSelector">
+        <option value="">Hasta 3000 frigorias</option>
+        <option value="">Hasta 2500 frigorias</option>
+        <option value="">Hasta 1500 frigorias</option>
       </select>
-      <div class="description">
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur nec posuere odio. Phasellus odio lectus, ultrices non pretium ac, mollis id elit. Fusce tempor tellus non felis tempus vestibulum. Donec molestie purus sem. Suspendisse a neque quam. Etiam mollis volutpat odio, id euismod justo gravida. Aliquam erat volutpat. Phasellus faucibus venenatis lorem, vitae commodo elit pretium et.
-      </div>
       
      
       
@@ -103,6 +97,7 @@
           <li>Colocación del nuevo equipo</li>
           <li>Colocación de drenaje</li>
         </ul>
+    </div>
     </div>
     <div class="row">
       <ul class="nav nav-tabs">
@@ -141,7 +136,73 @@
         </div>
 
     </div>
-  </div>
+  <footer>
+  <div class="footer-top">
+      <div class="container">
+        <div class="row sidebar">
+      <aside class="col-xs-12 col-sm-6 col-md-3 widget social">
+        <div class="title-block">
+        <h3 class="title">Follow Us</h3>
+        </div>
+            <p>Follow us in social media</p>
+            <div class="social-list">
+        <a class="icon rounded icon-facebook" href="#"><i class="fa fa-facebook"></i></a>
+        <a class="icon rounded icon-twitter" href="#"><i class="fa fa-twitter"></i></a>
+        <a class="icon rounded icon-google" href="#"><i class="fa fa-google"></i></a>
+        <a class="icon rounded icon-linkedin" href="#"><i class="fa fa-linkedin"></i></a>
+        </div>
+        <div class="clearfix"></div>
+          </aside>
+
+      <aside class="col-xs-12 col-sm-6 col-md-3 widget newsletter">
+        <div class="title-block">
+        <h3 class="title">Newsletter Signup</h3>
+        </div>
+        <div>
+        <p>Sign up for newsletter</p>
+        <div class="clearfix"></div>
+        <form class="subscribe-form" method="post" action="php/subscribe.php">
+          <input class="form-control email" type="email" name="subscribe">
+          <button class="submit">
+          <span class="glyphicon glyphicon-arrow-right"></span>
+          </button>
+          <span class="form-message" style="display: none;"></span>
+        </form>
+        </div>
+      </aside><!-- .newsletter -->
+      
+      <aside class="col-xs-12 col-sm-6 col-md-3 widget links">
+        <div class="title-block">
+        <h3 class="title">Information</h3>
+        </div>
+        <nav>
+        <ul>
+          <li><a href="#">About us</a></li>
+          <li><a href="#">Privacy Policy</a></li>
+          <li><a href="#">Terms &amp; Condotions</a></li>
+          <li><a href="#">Secure payment</a></li>
+        </ul>
+        </nav>
+          </aside>
+      
+      <aside class="col-xs-12 col-sm-6 col-md-3 widget links">
+        <div class="title-block">
+        <h3 class="title">My account</h3>
+        </div>
+        <nav>
+        <ul>
+          <li><a href="#">My account</a></li>
+          <li><a href="#">Order History</a></li>
+          <li><a href="#">Wish List</a></li>
+          <li><a href="#">Newsletter</a></li>
+        </ul>
+        </nav>
+          </aside>
+        </div>
+      </div>
+    </div>
+  </footer>
+        <script src="js/jquery-3.2.1.min.js"></script>
         <script src="js/modernizr-3.5.0.min.js"></script>
         <script src="js/bootstrap.min.js"></script>
         <script src="js/main.js"></script>

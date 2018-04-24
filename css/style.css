@@ -1,3 +1,91 @@
 body {
-  color: #333;
+  font-family: "Lato", sans-serif;
+}
+body header {
+  background-color: #1d50b1;
+  color: white !important;
+  margin-bottom: 0px !important;
+}
+body .nav > li > a:hover {
+  background-color: #1d50b1 !important;
+}
+body .navbar-header {
+  width: 100%;
+}
+body .navbar-header .logo {
+  width: 15vw;
+}
+body .navbar-header .phone {
+  height: 100%;
+  display: flex;
+  align-items: center;
+  font-size: 18px;
+}
+body .navbar-header .phone i {
+  -webkit-transform: rotate(90deg);
+  -moz-transform: rotate(90deg);
+  -ms-transform: rotate(90deg);
+  -o-transform: rotate(90deg);
+  transform: rotate(90deg);
+  margin-right: 5px;
+}
+body .navbar-header nav {
+  display: flex;
+  justify-content: space-between;
+}
+body .navbar-right a {
+  color: white !important;
+}
+body .breadcrumb {
+  font-size: 10px;
+  background-color: transparent;
+  padding: 8px 50px;
+}
+body .breadcrumb a {
+  color: grey;
+}
+body .productRow {
+  height: 80vh;
+}
+body .productRow .miniatures {
+  display: flex;
+  flex-direction: column;
+  height: 30vh;
+  justify-content: space-between;
+}
+body .productRow .miniatures img {
+  width: 50px;
+}
+body .productRow .mainPic img {
+  width: 375px;
+  height: 480px;
+  background-image: url("../img/aire.jpg");
+}
+body .productRow .description {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+body .productRow .description .productTitle {
+  font-size: 30px;
+  font-weight: bold;
+}
+body .productRow .description .price {
+  font-size: 25px;
+  color: #ff3e84;
+  margin: 25px 0;
+}
+body .productRow .description .friSelector {
+  font-size: 18px;
+  margin: 5px 0;
+  font-weight: bold;
+}
+body .productRow .description .fgSelector {
+  width: 70%;
+  margin: 20px 0;
+}
+body .productRow form button {
+  background-color: transparent;
+  color: #ff3e84;
+  border-color: #ff3e84 2px solid;
 }
