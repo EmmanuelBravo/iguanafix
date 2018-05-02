@@ -74,6 +74,7 @@ body .productRow .description .price {
   font-size: 25px;
   color: #ff3e84;
   margin: 25px 0;
+  font-weight: bold;
 }
 body .productRow .description .friSelector {
   font-size: 18px;
@@ -81,11 +82,18 @@ body .productRow .description .friSelector {
   font-weight: bold;
 }
 body .productRow .description .fgSelector {
-  width: 70%;
+  width: 50%;
+  height: 6vh;
   margin: 20px 0;
+  border-radius: 5px;
 }
 body .productRow form button {
-  background-color: transparent;
-  color: #ff3e84;
-  border-color: #ff3e84 2px solid;
+  background-color: #ff3e84 !important;
+  color: white;
+  border-radius: 20px;
 }
+body .productRow form button:hover {
+  color: white;
+}
+
+/*# sourceMappingURL=css/style.css.map */
